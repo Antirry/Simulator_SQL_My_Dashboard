@@ -1,0 +1,11 @@
+[tool.ruff]
+select = [
+    "E",
+    "W",
+    "F",
+    "I",
+    "C",
+    "B"
+]
+ignore = []
+show-fixes = true

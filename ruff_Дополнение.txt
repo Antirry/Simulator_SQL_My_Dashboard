@@ -1,0 +1,36 @@
+[tool.ruff]
+select = [
+    "E",
+    "W",
+    "F",
+    "I",
+    "C",
+    "B"
+]
+ignore = []
+show-fixes = true
+
+
+Чтобы переделать код под определенную версию,
+ Можно использовать:
+
+target_version = "py37"
+
+По умолчанию python 3.10
+
+
+
+Подробнее про конфиг для библиотеки ruff и
+ для проверки правильности написания кода, правил языка
+
+https://github.com/astral-sh/ruff
+
+
+
+pip install ruff
+
+ruff check . (ИЛИ ФАЙЛ/"ФАЙЛ")
+ruff check . (ИЛИ ФАЙЛ/"ФАЙЛ") --fix
+
+ruff check "тест_pygwalker.ipynb"
+ruff check "тест_pygwalker.ipynb" --fix
